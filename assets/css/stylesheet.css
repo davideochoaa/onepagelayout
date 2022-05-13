@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background.color:#15172b;
+}
+
 h1{
     font-family: 'Sora', sans-serif;
 }
@@ -21,6 +25,23 @@ h1{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr auto;
 }
+
+/*** SCROLLBAR ***/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #15172b;
+  	opacity:0.1;
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    background: #00FF90; 
+}
+
     /*** SEZIONE CHE CONTIENE I TITOLI ED IL FORM***/
     #sezione_1{
         grid-column: 1/13;
